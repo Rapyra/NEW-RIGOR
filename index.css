@@ -1,0 +1,549 @@
+* {
+    box-sizing: border-box;
+  }
+  
+
+body {
+    background-color: RGB(229,228,226);
+    font-family: 'Lora', serif;
+    font-size: 12px;
+    color: RGB(69, 57, 109);
+    margin: 0;
+}
+
+p {
+  font-size: 3.5vw;
+  transition: ease all .2s;
+  font-family: 'Lora', serif;
+  text-align: justify;
+  text-indent: 5vw;
+  /* line-height: 1.2; */
+}
+
+.noIndent {
+  text-indent: 0vw;
+}
+
+.wideP {
+  line-height: 2;
+}
+
+.okP {
+  line-height: 1.5;
+}
+h1 {
+  font-size: 4vw;
+  transition: ease all .2s;
+}
+
+hr {
+  width: 30%;
+  color: RGB(233, 116, 81);
+  background-color: RGB(233, 116, 81);
+  height: 2px;
+  border-width:0;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: hsla(0, 0%, 0%, 0.0);
+    width: 20%;
+    padding: 20px;
+  }
+  /* brand column */
+.brand {
+    display: flex;
+    justify-content: center;
+  }
+
+.logo {
+    max-width: 100%;
+} 
+/* ..........................................NAV BAR............................. */
+  /* Style the top navigation bar */
+#navbar {
+    display: flex;
+    justify-content: center;
+    background-color: RGB(251, 165, 123);
+    z-index: 8;
+    width: 100%;
+
+  }
+
+  /* Style the navigation bar links */
+#navbar a {
+    background-color: RGB(251, 165, 123);
+    color: RGB(69, 57, 109);
+    padding: 1vh 14px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 3vw;
+    width: 20%;
+    z-index: 8;
+    font-weight: normal;
+    font-family:'Lora', serif;;
+  }
+  /* Change color on hover */
+#navbar a:hover {
+    background-color: RGB(239, 200, 201);
+    color: RGB(69, 57, 109);
+  }
+
+.sticky {
+    position: fixed;
+    top: 0;
+  }
+  
+.sticky + .content {
+    padding-top: 15vw;
+  }
+
+  /* ................................DIV TEXT ORIENTATION.................. */
+  
+  
+  .pad {
+    padding: 0vw 5vw;
+  }
+  
+  .marg {
+   margin: 0vw 5vw;
+  }
+  
+.centerDiv {
+    text-align: center;
+    margin: auto;
+    width: 75%;
+    font-size: 2.5vw;
+  }
+/* .leftDiv {
+    text-align: left;
+}
+.rightDiv {
+    text-align: right;
+} */
+
+.container {
+  position: relative;
+  /* max-width: 800px;
+  margin: 0 auto; */
+}
+
+.textBlock1 p {
+  position: absolute;
+  left: 2%;
+  top: 7%;
+  -ms-transform: translateY(-10%);
+  transform: translateY(-10%);
+  background-color: RGBA(229,228,226,0.5);
+  color: RGB(69, 57, 109);
+  padding: 3%;
+  width: 32em;
+  transition: ease all .5s;
+  font-family: 'Lora', serif;
+  font-size: 3vw;
+}
+
+.textBlock11 p {
+  position: absolute;
+  left: 2%;
+  top: 20%;
+  -ms-transform: translateY(-10%);
+  transform: translateY(-10%);
+  background-color: RGBA(229,228,226,0.5);
+  color: RGB(69, 57, 109);
+  padding: 3%;
+  width: 24em;
+  transition: ease all .5s;
+  font-family: 'Lora', serif;
+  font-size: 4vw;
+  text-align: center;
+  text-indent: 0vw;
+}
+.textBlock2 p {
+  position: absolute;
+  left: 2%;
+  top: 21%;
+  -ms-transform: translateY(-10%);
+  transform: translateY(-10%);
+  background-color: RGBA(229,228,226,0.7);
+  color: RGB(69, 57, 109);
+  padding: 3%;
+  width: 30em;
+  transition: ease all .5s;
+  font-family: 'Lora', serif;
+  font-size: 3.2vw;
+}
+
+.textBlock21 p {
+  position: absolute;
+  left: 2%;
+  top: -3%;
+  -ms-transform: translateY(-10%);
+  transform: translateY(-10%);
+  background-color: RGBA(229,228,226,0.7);
+  color: RGB(69, 57, 109);
+  padding: 2%;
+  width: 16em;
+  transition: ease all .5s;
+  font-size: 4vw;
+  font-family: 'Lora', serif;
+}
+.centerImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:100%
+}
+
+.centerText {
+  text-align: center
+}
+
+.centerImgBlur {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+
+.sideImg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexContent {
+  margin: 1em 2em;
+  flex: 30%;
+  width: 90%;
+}
+
+.flexImg {
+  flex: 30%;
+  width: 50%;
+}
+
+.flexImg1 {
+  margin: 2em 1em;
+  flex: 30%;
+  width: 50%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.grid-container > div {
+  text-align: center;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.whiteText {
+    color: RGB(229,228,226);
+    /* color: white; */
+    /* color: black; */
+    font-size: 5vw;
+}
+
+.whiteTextBox {
+  background-color: white;
+  padding: 1.5vw;
+}
+
+.contactBigText {
+  font-size: 4vw;
+}
+
+/* 
+.flexImgLeft {
+  margin: 5vw;
+  padding: 5vw;
+
+} */
+
+/* .container img {vertical-align: middle;} */
+
+    
+/* filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+   border-radius: 50%; */
+
+/* ......................................ITEM LEVELS..................... */
+
+.zLevelOne {
+  position: relative;
+  z-index: 1;
+}
+
+.zLevelTwo {
+  position: relative;
+  z-index: 2;
+}
+.zLevelThree {
+  position: relative;
+  z-index: 3;
+}
+
+/* .........................................SHADOWS............................. */
+
+.smallShadow {
+    box-shadow: -1.5vw -1.5vw 2vw rgba(0, 0, 0, 0.5);
+}
+
+.smallerShadow {
+  box-shadow: -1vw -1vw 1.5vw rgba(0, 0, 0, 0.5);
+}
+
+.mediumShadow {
+  box-shadow: -2vw -2vw 1.5vw rgba(0, 0, 0, 0.5);
+}
+
+.shadowOrange {
+  box-shadow: -2vw -2vw 0vw rgba(233, 116, 81, 1);
+}
+.shadowDoubleOV {
+  box-shadow: -10vw -2vw 0vw rgba(233, 116, 81, 1), 10vw 2vw 0vw rgba(142, 115, 182, 1);
+  transition: ease all .5s;
+}
+.shadowDoubleLSSB {
+  box-shadow: -10vw -2vw 0vw rgba(142, 115, 182, 1), 10vw 2vw 0vw rgba(251, 165, 123, 1);
+  transition: ease all .5s;
+}
+
+.noShaddowSplit {
+  box-shadow: -2vw -2vw 0vw rgba(233, 116, 81, 1), 2vw 2vw 0vw rgba(142, 115, 182, 1);
+  transition: ease all .5s;
+}
+/* ......................................BOX BORDERS.......................... */
+
+.burnedSienaBorder {
+  border-style: solid;
+  border-color: RGB(233, 116, 81);
+}
+
+.lightSalmonBorder {
+  border-style: solid;
+  border-color: RGB(251, 165, 123);
+}
+
+.linenBorder {
+  border-style: solid;
+  border-color: RGB(251, 165, 123);
+}
+
+.darkSlateBorder {
+  border-style: solid;
+  border-color: RGB(69, 57, 109);
+}
+
+.slateBlueBorder {
+  border-style: solid;
+  border-color: RGB(142, 115, 182);
+}
+
+.platinumBorder {
+  border-style: solid;
+  border-color: RGB(229,228,226);
+}
+/* ......................................LINK STATES............................ */
+
+ /* unvisited link */
+ a:link {
+  color: RGB(233, 116, 81);
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+/* visited link */
+a:visited {
+  color: RGB(233, 116, 81);
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+/* mouse over link */
+a:hover {
+  color: RGB(69, 57, 109);
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+/* selected link */
+a:active {
+  color: RGB(142, 115, 182);
+  text-decoration: none;
+  font-weight: bolder;
+} 
+
+/* .....................................COLOR CLASSES........................... */
+
+.burnedSiena {
+  background-color: RGB(233, 116, 81);
+}
+
+.lightSalmon {
+  background-color: RGB(251, 165, 123);
+}
+
+.linen {
+  background-color: RGB(239, 200, 201);
+}
+
+.darkSlate {
+  background-color: RGB(69, 57, 109);
+}
+
+.slateBlue {
+  background-color: RGB(142, 115, 182);
+}
+
+.platinum {
+  background-color: RGB(229,228,226);
+}
+
+/* ........................................PAGINATION............................... */
+
+.center {
+  text-align: center;
+}
+.pagination {
+  display: inline-block;
+  font-size: 3vw;
+}
+
+.pagination a {
+  color: RGB(69, 57, 109);
+  padding: 1vw 2vw;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: RGB(233, 116, 81);
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: RGB(251, 165, 123);
+}
+
+/* ........................................@media................................. */
+
+  
+@media only screen and (min-width: 600px) {
+    #navbar a {
+      font-size: 2.5vw;}
+    p {
+      font-size: 2.5vw; 
+      transition: ease all .2s;}
+    .textBlock1 p {
+      width: 32em; 
+      left: 2%; 
+      top: 45%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); transition: ease all .2s;}
+    .textBlock2 p {
+      font-size: 2.6vw;
+      width: 65vw; 
+      left: 30%; 
+      top: 55%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); transition: ease all .2s;}
+    .textBlock21 p {
+      left: 7%; 
+      top: 1%;
+      width: 16em; 
+    }
+    .flexContainer {
+      flex-direction: row;}
+    h1 {
+      font-size: 4vw; 
+      transition: ease all .2s;}
+    .flexContent {
+      margin: 4vw;
+      flex: 30%;
+      width: 100%;}
+    .flexImg {
+      margin: 2em;
+      flex: 30%;
+      width: 50%;
+      justify-content: center;
+      align-items: center;
+    }
+    .flexImg1 {
+      margin: 15vw 5vw;
+      justify-content: center;
+      align-items: center;
+    }
+    .shadowDoubleOV {
+      box-shadow: -2vw -2vw 0vw rgba(233, 116, 81, 1), 2vw 2vw 0vw rgba(142, 115, 182, 1);
+      transition: ease all .5s;
+    }
+    .shadowDoubleLSSB {
+      box-shadow: 0vw 0vw 0vw rgba(233, 116, 81, 1), 0vw 0vw 0vw rgba(142, 115, 182, 1);
+      transition: ease all .5s;
+    }
+        .pagination {
+      font-size: 2vw;
+    }
+    .pagination a {
+        padding: 1vw 2vw;
+    }  
+    .contactBigText {
+      font-size: 2.5vw;
+    }
+}
+
+  @media   only screen and (min-width: 900px) {
+    p {font-size: 1.5vw; transition: ease all .2s;}
+    .textBlock1 p {
+      width: 32em; 
+      top: 45%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); 
+      transition: ease all .2s;
+    }
+
+    .textBlock2 p {
+      font-size: 2.1vw;
+      width: 30em; 
+      top: 55%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); 
+      transition: ease all .2s;
+    }
+
+    .textBlock21 p {
+      top: 10%;
+      width: 16em;
+    } 
+
+    .pagination {
+      font-size: 1vw;
+    }
+    .pagination a {
+        padding: 0.5vw 1vw;
+  }
+/* opacity: 0; 
+transition: opacity 0.15s linear;
+-o-transition: opacity 0.15s linear; 
+-webkit-transition: opacity 0.15s linear;  */

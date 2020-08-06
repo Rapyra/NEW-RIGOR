@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contacts</title>
+  
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <br>
+    <div class="brand">
+        <div style="flex-grow: 1" class="fakeimg"></div>
+        <div style="flex-grow: 8"><a href="index.html"><img class="logo" src="blue big logo.png" alt="logo of brand";></a></div>
+        <div style="flex-grow: 1" class="fakeimg"></div>
+    </div>
+<br>
+<!-- Navigation Bar -->
+<div id="navbar">
+    <a href="index.html">Home</a>
+    <a href="#">Blog</a>
+    <a href="#">Creations</a>
+    <a href="contacts.html" >Contacts</a>
+</div>
+
+  <br>
+
+  <div class="content">
+    <div class="container" >
+      <img class="centerImg" src="DSC_0740-3.jpg" alt="Sunset";>
+      <div class="textBlock11">
+        <p><strong>This blog is meant to share and describe my process of creating earrings</strong> that I am selling at <em>Rigor Samsa Crafts</em> shop on Etsy. <br><a href="index.html">Read more &#8811;</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+<div class = "slateBlue whiteText centerText">
+  <h1 style = "padding:1vw" >Contacts</h1>
+</div>
+
+<div class="flexContainer" style = "padding:2vw">
+	<img class="flexImg shadowDoubleOV" src="Etsy.png" alt="Etsy store logo">
+ 	<div class="flexContent wideP centerText contactBigText">     
+	 	<a href="https://www.etsy.com/uk/shop/RigorSamsaCrafts" target="_blank">Press here and go to RigorSamsaCrafts store on Etsy</a>
+  </div>
+</div>
+
+<div class="flexContainer" style = "padding:2vw">
+	<img class="flexImg shadowDoubleOV" src="instagram.png" alt="Instagram store logo">
+ 	<div class="flexContent wideP centerText contactBigText">     
+	 	<a href="https://www.instagram.com/rigor_samsa_crafts/" target="_blank">Press here and go to rigor_samsa_crafts page on Instagram</a>
+  </div>
+</div>
+
+<div class="flexContainer" style = "padding:2vw">
+	<img class="flexImg shadowDoubleOV" src="gmail.png" alt="Gmail logo">
+ 	<div class="flexContent wideP centerText contactBigText">     
+	 	<a href="mailto: rigor.samsa.crafts@gmail.com">Press here and write an email to rigor.samsa.crafts@gmail.com</a>
+  </div>
+</div>
+
+<div class = "slateBlue whiteText centerText">
+  <h1 style = "padding:1vw" ></h1>
+</div>
+
+
+<hr>
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+</body>
+</html>

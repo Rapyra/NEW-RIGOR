@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Once upon the time...</title>
+  
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <br>
+    <div class="brand">
+        <div style="flex-grow: 1" class="fakeimg"></div>
+        <div style="flex-grow: 8"><a href="index.html"><img class="logo" src="blue big logo.png" alt="logo of brand";></a></div>
+        <div style="flex-grow: 1" class="fakeimg"></div>
+    </div>
+<br>
+<!-- Navigation Bar -->
+<div id="navbar">
+    <a href="index.html">Home</a>
+    <a href="#">Blog</a>
+    <a href="#">Creations</a>
+    <a href="contacts.html">Contacts</a>
+  </div>
+
+  <br>
+
+  <div>
+    <img class="noShaddowSplit floatLeft" src="Small me.jpeg" alt="A small document photo of a girl in her teens" style = "width: 40vw; height: auto; margin: 5vw">
+</div>
+<div class = "okP pad">  
+      <h1>Once upon the time...</h1>
+      <p>
+        … in a small town in the middle of a small country lived a small girl. She was going to the 
+        middle school and after school she went to the nearby library where her mother worked as a librarian. 
+        She would read books about the world and interact with younger kids. One day library got a new book, 
+        which name is unknown by now. The book was about a magical substance, polymer clay, which was malleable 
+        like a usual clay and yet it became a sturdy plastic after cooking it in a simple home oven? 
+        </p>
+        <p>
+            She already then knew that for real clay you needed a special oven. Furthermore, that clay was so 
+            colourful and vivid, it sparked so many creative ideas in her head that it made her little heart beat 
+            faster from excitement. Unfortunately, at that time that material was not available in her small town, 
+            or in the whole country. Time passed, internet appeared, she here and there saw how other people used 
+            the material, a polymer clay, and she awed on how versatile it was. She began collecting a folder of 
+            ideas what she would do if she had polymer clay. Just in case such a day came by.  
+        </p>
+        <p>
+            Even more time went by, she left her small country to study abroad, times changed too, many things 
+            became more easily available. The girl became a woman, she got salary and  some time to spare for hobbies. 
+            Once while visiting a craft shop she saw and recognised polymer clay packages sold there. At that moment memories, 
+            the ideas and excitement flooded her… and that is how the story of a happy crafting began.
+        </p>
+      <p> 
+        <br>
+         <em>Sincerely,<br>
+             JS a.k.a RN of Rigor Samsa</em>
+      </p>
+</div>
+
+<hr>
+
+
+  
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+</body>
+</html>

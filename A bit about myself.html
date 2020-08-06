@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A bit about myself</title>
+  
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <br>
+    <div class="brand">
+        <div style="flex-grow: 1" class="fakeimg"></div>
+        <div style="flex-grow: 8"><a href="index.html"><img class="logo" src="blue big logo.png" alt="logo of brand";></a></div>
+        <div style="flex-grow: 1" class="fakeimg"></div>
+    </div>
+<br>
+<!-- Navigation Bar -->
+<div id="navbar">
+    <a href="index.html">Home</a>
+    <a href="#">Blog</a>
+    <a href="#">Creations</a>
+    <a href="contacts.html">Contacts</a>
+  </div>
+
+  <br>
+
+<div>
+    <img class="noShaddowSplit floatLeft" src="me6.jpg" alt="Portret of the site creator" style = "width: 40vw; height: auto; margin: 5vw">
+</div>
+<div class = "okP pad">  
+      <h1>A bit about myself</h1>
+      <p> Since I was a kid I wanted to be an artist. My mom said that she could put some paper and pencils for me and I could sit for hours drawing something. My mom grew up into adulthood at the time of uncertainty in my country, Lithuania. When I was born she was in her mid thirties, Lithuania became independent, and another decade of uncertainty began. 
+        She wanted all the best for me and she encouraged my artistic soul to be trained in natural sciences in an effort to ensure for me a more stable future.
+      </p> 
+      <p>I was and still partly am a person who thrives on positive affirmations. 
+        I did my best to find my own way through the world of hard sciences in highshool to please my mom. I still liked arts and tried to
+        apply for a college of graphic design but I also liked plants and animals, 
+        though I wasn't stellar at biology and hated chemistry. Due to a streak of curious events (it is a whole separate story) 
+        I still got not just into university, but into a programme of biology and enviromental sciences (it is whole separate story too). So, to make this story 
+        short, at the end I did my best and stomped that path until I ended up in Finland, at the
+        University of Helsinki studying general microbiology 
+        for my PhD degree. I am a curious person who likes to invent, am sensitive to conflicts and hate going through others just to succeed... Unfortunately, 
+        to excel in science further on conflicts of interest and competition was
+        waiting for me, there were no options just to stay at the same level. So after graduation I made a stop to think what 
+        I actually want my life to be. So here I am at the moment, figuring out what to do further on. 
+      </p>
+      <p>If you will stay tuned, later on I will tell more stories about how, when and why I began working with polymer clay and resin and why earrings. I will also share 
+          stories of inspiration, techniques, struggles, thought processes and many other things. And what it means for me <em>"Stay flexibly strong - be Rigor Samsa!"</em>. <br> 
+        <br>
+         <em>Sincerely,<br>
+             JS a.k.a RN of Rigor Samsa</em>
+      </p>
+</div>
+
+<hr>
+
+
+  
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+</body>
+</html>
