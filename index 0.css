@@ -1,0 +1,261 @@
+body {
+    background-color: RGB(229,228,226);
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    margin: 0;
+    font-size: 12px;
+    color: RGB(69, 57, 109);
+}
+
+p {
+  font-size: 2vw;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: hsla(0, 0%, 0%, 0.0);
+    width: 20%;
+    padding: 20px;
+  }
+  /* brand column */
+.brand {
+    display: flex;
+    justify-content: center;
+  }
+
+.logo {
+    max-width: 100%;
+} 
+
+  /* Style the top navigation bar */
+#navbar {
+    display: flex;
+    justify-content: center;
+    background-color: RGB(251, 165, 123);
+    z-index: 8;
+   
+  }
+
+  /* Style the navigation bar links */
+#navbar a {
+    background-color: RGB(251, 165, 123);
+    color: RGB(69, 57, 109);
+    padding: 1vh 14px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2vW;
+    width: 20%;
+    z-index: 8;
+  }
+  /* Change color on hover */
+#navbar a:hover {
+    background-color: RGB(239, 200, 201);
+    color: RGB(69, 57, 109);
+  }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+.sticky + .content {
+    padding-top: 10vh;
+  }
+
+  /* ................................DIV TEXT ORIENTATION.................. */
+
+.centerDiv {
+    text-align: center;
+    margin: auto;
+    width: 75%;
+    padding: 20px;
+    font-size: 2.5vw;
+  }
+.leftDiv {
+    text-align: left;
+}
+.rightDiv {
+    text-align: right;
+}
+
+/* ......................................ITEM LEVELS..................... */
+
+.zLevelOne {
+    position: relative;
+    z-index: 1;
+}
+
+.zLevelTwo {
+    position: relative;
+    z-index: 2;
+}
+.zLevelThree {
+    position: relative;
+    z-index: 3;
+}
+
+/* .........................................SHADOWS............................. */
+
+.smallShadow {
+    box-shadow: -1.5vw -1.5vw 2vw rgba(0, 0, 0, 0.5);
+}
+
+.smallerShadow {
+  box-shadow: -1vw -1vw 1.5vw rgba(0, 0, 0, 0.5);
+}
+
+.mediumShadow {
+  box-shadow: -2vw -2vw 1.5vw rgba(0, 0, 0, 0.5);
+}
+
+.whiteText {
+    color: RGB(229,228,226);
+    /* color: white; */
+    /* color: black; */
+    font-size: 5vw;
+}
+
+.whiteTextBox {
+  background-color: white;
+  padding: 1.5vw;
+}
+
+/* ......................................BOX BORDERS.......................... */
+
+.burnedSienaBorder {
+  border-style: solid;
+  border-color: RGB(233, 116, 81);
+}
+
+.lightSalmonBorder {
+  border-style: solid;
+  border-color: RGB(251, 165, 123);
+}
+
+.linenBorder {
+  border-style: solid;
+  border-color: RGB(251, 165, 123);
+}
+
+.darkSlateBorder {
+  border-style: solid;
+  border-color: RGB(69, 57, 109);
+}
+
+.slateBlueBorder {
+  border-style: solid;
+  border-color: RGB(142, 115, 182);
+}
+
+.platinumBorder {
+  border-style: solid;
+  border-color: RGB(229,228,226);
+}
+/* ......................................LINK STATES............................ */
+
+ /* unvisited link */
+ a:link {
+  color: RGB(233, 116, 81);
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: RGB(251, 165, 123);
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: RGB(69, 57, 109);
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: RGB(142, 115, 182);
+  text-decoration: none;
+} 
+
+/* .....................................COLOR CLASSES........................... */
+
+.burnedSiena {
+  background-color: RGB(233, 116, 81);
+}
+
+.lightSalmon {
+  background-color: RGB(251, 165, 123);
+}
+
+.linen {
+  background-color: RGB(239, 200, 201);
+}
+
+.darkSlate {
+  background-color: RGB(69, 57, 109);
+}
+
+.slateBlue {
+  background-color: RGB(142, 115, 182);
+}
+
+.platinum {
+  background-color: RGB(229,228,226);
+}
+
+/* ........................................PAGINATION............................... */
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: RGB(69, 57, 109);
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: RGB(233, 116, 81);
+  color: white;
+}
+
+/* .pagination a:hover:not(.active) {background-color: RGB(251, 165, 123);} */
+
+/* ........................................@media................................. */
+
+  
+@media only screen and (max-width: 600px) {
+    #navbar a {
+        font-size: 3vw;
+    }
+    .centerDiv {
+        font-size: 3vw;
+        width: 70%;
+    }
+    p {
+        font-size: 2.5vw;
+    }
+    .sticky + .content {
+        padding-top: 5vw;
+      }
+  }
+  }
+
+  
+  
+  @media only screen and (min-width: 600px) {
+    #navbar a {
+        font-size: 0.5vw;
+    }
+
+  }
+  } 
+
+  @media only screen and (max-width: 700px) {
+    #navbar a {
+        font-size: 100px;
+    }
+
+  } 
+  }
