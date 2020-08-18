@@ -238,6 +238,12 @@ hr {
   width: 50%;
 }
 
+.flexImg2 {
+  margin: 2em 2em;
+  flex: 30%;
+  width: 85%;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
@@ -485,7 +491,7 @@ a:active {
     .flexImg {
       margin: 2em;
       flex: 30%;
-      width: 50%;
+      width: 20%;
       justify-content: center;
       align-items: center;
     }
