@@ -278,6 +278,24 @@ hr {
   font-size: 4vw;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+
+.column a {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
 /* 
 .flexImgLeft {
   margin: 5vw;
@@ -517,6 +535,10 @@ a:active {
     .contactBigText {
       font-size: 2.5vw;
     }
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
 }
 
   @media   only screen and (min-width: 900px) {
@@ -546,9 +568,14 @@ a:active {
     .pagination {
       font-size: 1vw;
     }
+    .column {
+      flex: 25%;
+      max-width: 25%;
+    }
     .pagination a {
         padding: 0.5vw 1vw;
   }
+  
 /* opacity: 0; 
 transition: opacity 0.15s linear;
 -o-transition: opacity 0.15s linear; 
