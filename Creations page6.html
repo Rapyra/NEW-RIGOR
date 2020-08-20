@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Creations page 6</title>
+  
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <br>
+    <div class="brand">
+        <div style="flex-grow: 1" class="fakeimg"></div>
+        <div style="flex-grow: 8"><a href="index.html"><img class="logo" src="blue big logo.png" alt="logo of brand";></a></div>
+        <div style="flex-grow: 1" class="fakeimg"></div>
+    </div>
+<br>
+<!-- Navigation Bar -->
+<div id="navbar">
+    <a href="index.html">Home</a>
+    <a href="#">Blog</a>
+    <a href="Creations.html">Creations</a>
+    <a href="contacts.html">Contacts</a>
+</div>
+<br>
+<div class="row"> 
+    <div class="column">
+        <a href="https://www.etsy.com/uk/listing/806139669/urban-thin-long-polymer-clay-drop" target="_blank">
+            <img class="flexImg3" src="imported/DSC_0606-207.jpg" alt="Urban thin long black and cold colored polymer clay drop earrings">
+        </a> 
+           </div>
+    <div class="column">
+        <a href="https://www.etsy.com/uk/listing/797170358/crisp-medium-polymer-clay-triangle-drop" target="_blank">
+            <img class="flexImg3" src="imported/DSC_0609-210.jpg" alt="Crisp medium green and blue polymer clay triangle drop earrings">
+        </a> 
+           </div>
+    <div class="column">
+        <a href="https://www.etsy.com/uk/listing/715290737/unique-small-size-crackle-polymer-clay" target="_blank">
+            <img class="flexImg3" src="imported/untitled-0446-2.jpg" alt="Unique small size black and yellow crackle polymer clay stud earrings">
+        </a> 
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<hr>
+<br>
+<div class="center">
+  <div class="pagination">
+    <!-- <a href="#">&laquo;</a> -->
+    <a href="Creations.html">1</a>
+    <a href="Creations page2.html">2</a>
+    <a href="Creations page3.html">3</a>
+    <a href="Creations page4.html">4</a>
+    <a href="Creations page5.html" >5</a>
+    <a href="Creations page6.html"class="active">6</a>
+    <!-- <a href="#">&raquo;</a> -->
+  </div>
+</div>
+<br>
+<hr>
+<br>
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+</body>
+</html>
