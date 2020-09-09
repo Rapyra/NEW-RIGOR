@@ -314,6 +314,55 @@ hr {
   
    border-radius: 50%; */
 
+/* ......................................ANIMATION....................... */
+.downArrow{
+text-align: center;
+padding: 2em;
+}
+.bounce {
+	-moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation-timing-function: ease-out;
+	animation: bounce 2s infinite;
+}
+@-moz-keyframes bounce {
+  0%, 100% {
+    -moz-transform: translateY(-80px);
+    transform: translateY(-80px);
+  }
+ 
+  80% {
+    -moz-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translateY(-80);
+    transform: translateY(-80);
+  }
+ 
+  80% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    -moz-transform: translateY(-80);
+    -ms-transform: translateY(-80);
+    -webkit-transform: translateY(-80);
+    transform: translateY(-80);
+  }
+
+  80% {
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+}
+
 /* ......................................ITEM LEVELS..................... */
 
 .zLevelOne {
